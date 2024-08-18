@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mon Blog</title>
+    <link rel="stylesheet" href="../Pages/CSS/styles.css">
+</head>
+<body>
+    <div class="diamond-container"></div>
+    <header>
+        <nav class="menu">
+            <div class="menu-icon" id="menu-toggle">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul id="nav-menu">
+                <li><a href="index.html" class="menu-item">À propos</a></li>
+                <li><a href="entreprises.html" class="menu-item">Entreprises</a></li>
+                <li><a href="articles.html" class="menu-item active">Articles</a></li>
+                <li><a href="contact.html" class="menu-item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>>
+
+    <main>
+        <section class="contact">
+            <h1>Contactez-moi</h1>
+            <form id="contact-form">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+            <div id="response-message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mon Blog. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.latest.js"></script>
+    <script src="../Scripts/script.js"></script>
+</body>
+</html>
